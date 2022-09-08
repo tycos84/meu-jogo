@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+:root {
+    font-size: 40px;
+    font-family: 'Silkscreen', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.table {
+    background-image: url("./tela.png");
+    height: 1000px;
+    padding-top: 0.5rem;
+    background-size:cover;
+    background-position: top ;
+    
+    
+}
+
+.container {
+    margin: auto;
+    width: 35vw;
+    
+}
+
+.title {
+    color:rgb(253, 7, 7);
+
+}
+
+.score {
+    border: 3px solid rgb(238, 230, 10);
+    color:rgb(242, 114, 9)
+    
+    
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 0.5rem;
+    background-color: black;
+    width: 50vw;
+    padding: 0.5rem;
+    height: 100px;
+
+
+height: 700px;
+border: 3px solid rgb(238, 230, 10);
+    border-radius: 0.625rem;
+    box-shadow: 0.875rem 0.875rem 0 0 rgb(241, 245, 7); 
+    
+    
+}
+
+
+.card {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border: 3px solid rgb(238, 230, 10);
+    font-weight: 700;
+    width: 150px;
+    height: 150px;
+    background-image: url("./coroa\ 2.jpeg");
+    background-size: cover;
+ background-position: center;
+    border-radius: 400px;
+    position: relative;
+
+    cursor: pointer;
+    color: transparent;
+
+    transform:rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+
+.open {
+    background-image: url("./hipnose\ 3.3.jpeg");
+ background-size: cover;
+ background-position: center;
+ backface-visibility: hidden;
+    color: rgb(7, 35, 251);
+ transform: rotateY(0deg);
+}
